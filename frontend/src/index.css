@@ -98,3 +98,22 @@ button {
   position: absolute;
 }
 
+.recording{
+  position: relative;
+}
+
+#start-button{
+  position: absolute;
+  right: 200px;
+}
+
+#stop-button{
+  position: absolute;
+  right:170px;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color: #71A9F7;
+  position: absolute;
+  border-radius:15px;
+}
