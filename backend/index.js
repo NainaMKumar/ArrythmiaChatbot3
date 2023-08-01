@@ -21,8 +21,8 @@ const openai = new OpenAIApi(configuration);
 
 // Initialize Google Text-to-Speech client
 const ttsClient = new TextToSpeechClient({
-  projectId: "proven-aura-382621",
-  keyFilename: "C:/Users/lalikumar/Downloads/proven-aura-382621-e2e57a828f89.json",
+  projectId: process.env.PROJECT_ID,
+  keyFilename: process.env.FILENAME,
 });
 
 app.post("/", async (request, response) => {
